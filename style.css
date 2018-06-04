@@ -1,20 +1,72 @@
 img {
     border-radius: 100%;
+    width: 50%;
 }
 
-a {
-    padding: 5px;
-    color: black;
-    font-size: 140%;
-    text-decoration: none;
+p,
+h1 {
     font-family: 'Raleway Dots', cursive;
 }
 
-a:hover {
-    /*    text-decoration: overline;*/
-    color: grey;
+footer {
+    text-align: center;
+    color: white;
+    background-color: #17191b;
+    padding: 15px;
+    font-family: 'Raleway Dots', cursive;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
+html {
+    background-color: white;
 }
+
+/*---------- Navigation -----------*/
+
+nav {
+    padding: 5px;
+    background-color: white;
+    text-decoration: none;
+    font-family: 'Raleway Dots', cursive;
+    font-size: 1.2em;
+    position: relative;
+}
+
+a {
+    font-family: 'Raleway Dots', cursive;
+    background-color: white;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: overline;
+    color: #ffeb00;
+}
+
+.Shawna {
+    font-size: 1.4em;
+}
+
+
+
+/**----------- Media Q -------------**/
+
+/**----------- Forside -------------**/
+
+.forside,
+p {
+    color: black
+}
+
+/**----------- Ommig ---------------**/
+
+#om {
+    box-sizing: border-box;
+    background-color: rgba(255, 226, 0, 0.67);
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    text-align: center;
+
+}
+
+/**----------- Portfolio ---------------**/
