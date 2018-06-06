@@ -29,7 +29,7 @@ footer {
 }
 
 html {
-    background-color: rgba(245, 245, 245, 0.77);
+    background-color: rgba(245, 245, 245, 0.78);
 }
 
 hr {
@@ -47,6 +47,8 @@ nav {
     font-family: 'Raleway Dots', cursive;
     font-size: 1.2em;
     position: relative;
+
+    overflow: hidden;
 }
 
 ul a {
@@ -94,26 +96,22 @@ p {
 /**----------- Portfolio ---------------**/
 
 #portfolio {
-
-    justify-content: center;
     padding: 0;
     padding-top: 5vw;
+    padding-bottom: 5vw;
 }
 
 
 
 #portfolio .row {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    background-color: #ffffff;
-    flex-grow: 1;
-    flex-basis: 200px;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgba(245, 245, 245, 0.77);
 }
+
 
 h1 {
     text-align: center;
@@ -124,10 +122,9 @@ h1 {
 /**--- Portfolio boks -----**/
 
 .boks {
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     text-align: center;
-    z-index: 10;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -136,10 +133,39 @@ h1 {
 }
 
 .content {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
 }
 
 .tekst {
     padding: 2vw;
+}
+
+
+/**--- Portfolio hover over billeder/links -----**/
+
+.pic {
+    width: 400px;
+    height: 400px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+
+}
+
+.pic:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=30);
+}
+
+
+/**----------- everydayproject ---------------**/
+
+#everyday {
+
+    box-sizing: border-box;
+    background-color: rgba(255, 226, 0, 0.67);
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    text-align: center;
+
 }
