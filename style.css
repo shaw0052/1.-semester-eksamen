@@ -6,26 +6,30 @@ h1 {
     padding: 0;
 }
 
-#om img {
-    border-radius: 100%;
-    width: 50%;
+img {
+    width: 100%;
 }
+
+
 
 .bauhaus img {
     width: 30%;
 }
 
 p,
-h1 {
+h2,
+h3 {
     font-family: 'Raleway Dots', cursive;
 }
 
-footer {
-    text-align: center;
-    color: white;
-    background-color: #17191b;
-    padding: 15px;
+h1,
+h5 {
     font-family: 'Raleway Dots', cursive;
+    color: rgb(226, 49, 49);
+}
+
+h1 {
+    padding-bottom: 10vw;
 }
 
 html {
@@ -38,17 +42,38 @@ hr {
     background-color: rgb(226, 49, 49);
 }
 
+
+/*---------- Footer -----------*/
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #17191b;
+    padding: 15px;
+    margin-left: -3vw;
+    margin-right: -6vw;
+    font-family: 'Raleway Dots', cursive;
+}
+
+footer a {
+    color: white;
+    font-size: 1.6vw;
+}
+
+
 /*---------- Navigation -----------*/
 
 nav {
-    padding: 5px;
+
     background-color: white;
     text-decoration: none;
     font-family: 'Raleway Dots', cursive;
     font-size: 1.2em;
     position: relative;
-
     overflow: hidden;
+    margin-left: -3vw;
+    margin-right: -6vw;
+    padding-bottom: 5vw;
 }
 
 ul a {
@@ -59,11 +84,12 @@ ul a {
     letter-spacing: 0.8px;
     text-transform: uppercase;
     justify-content: space-between;
+    color: black;
 }
 
 a:hover {
     text-decoration: overline;
-    color: #ffeb00;
+    color: rgb(226, 49, 49);
 }
 
 
@@ -75,6 +101,17 @@ ul .menu {
 
 /**----------- Media Q -------------**/
 
+@media screen and (max-width:816px) {
+
+    footer a {
+        color: white;
+        font-size: 2vw;
+    }
+}
+
+
+
+
 /**----------- Forside -------------**/
 
 .forside,
@@ -85,13 +122,42 @@ p {
 /**----------- Ommig ---------------**/
 
 #om {
-    box-sizing: border-box;
-    background-color: rgba(255, 226, 0, 0.67);
-    margin-top: 10vw;
-    margin-bottom: 10vw;
-    text-align: center;
+    flex-grow: 1;
+    background-color: white;
+    padding: 10px 30px 10px;
+    margin: -3vw;
+    max-width: 1200px;
+    max-width: 900px;
+    position: relative;
+}
+
+
+#om h2 {
+    font-size: 4.5vw;
+}
+
+#om img {
+    border-radius: 100%;
+    width: 30%;
+    justify-content: center;
 
 }
+
+
+#om a {
+    font-size: 3.5vw;
+    line-height: 3vw;
+    color: black;
+    font-family: 'Raleway Dots', cursive;
+    text-decoration: none;
+    padding: 2vw;
+}
+
+#om i {
+    font-size: 3.3vw;
+    line-height: 5vw;
+}
+
 
 /**----------- Portfolio ---------------**/
 
@@ -115,7 +181,8 @@ p {
 
 h1 {
     text-align: center;
-    padding-top: 5vw;
+    padding-top: 10vw;
+    padding-bottom: 5vw;
 }
 
 
@@ -129,6 +196,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 
 }
 
@@ -162,10 +230,51 @@ h1 {
 
 #everyday {
 
-    box-sizing: border-box;
-    background-color: rgba(255, 226, 0, 0.67);
+    flex-grow: 1;
+    background-color: white;
+    padding: 10px 30px 10px;
     margin-top: 5vw;
     margin-bottom: 5vw;
-    text-align: center;
+    max-width: 1200px;
+    max-width: 900px;
+    position: relative;
 
+}
+
+/**----------- Stilartsite ---------------**/
+
+#stilart {
+    flex-grow: 1;
+    background-color: white;
+    padding: 10px 30px 10px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    max-width: 1200px;
+    max-width: 900px;
+    position: relative;
+}
+
+#stilart a {
+    color: red;
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 0.8px;
+}
+
+#stilart a:hover {
+    text-decoration: overline;
+}
+
+
+/**----------- Stilartsite ---------------**/
+
+#redesign {
+    flex-grow: 1;
+    background-color: white;
+    padding: 10px 30px 10px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    max-width: 1200px;
+    max-width: 900px;
+    position: relative;
 }
