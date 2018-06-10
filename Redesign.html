@@ -2,9 +2,10 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1. semester Portfolio</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <!------ Fonts -------->
@@ -21,42 +22,103 @@
 
 <body>
 
-    <!------ menu -------->
+    <!------ Burger menu -------->
 
-    <nav>
-        <ul>
+    <header>
 
-            <div class="menu">
-                <a href="index.html">Forside</a>
-                <a href="Portfolio.html">Portfolio</a>
-                <a href="Ommig.html">Om mig</a>
+        <div class="burgermenu">
+            <div class="menubutton">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
             </div>
-        </ul>
-    </nav>
-
-    <!------ Sidens indhold -------->
 
 
-    <h1>
-        Redesign
-    </h1>
-    <div id="redesign">
+            <nav class="hidden">
+                <div class="burger">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
 
-        <h3>Tema 3 - Grundlæggende Video </h3>
-        <p>
-            I dette projekt blev gruppen stillet opgaven at redesigne en eksisterende virksomheds hjemmeside. Med fokus på at tydeliggøre virksomhedens koncept og interesser, samt at overskueliggøre hjemmesiden ved at forbedre brugervenligheden, udviklede vi en hjemmeside som passede til Børnehuset Kong Gulerod.
-        </p>
-
-        <p>
-            <a href="http://shawnamercano.dk/kea/03-content/03-redesign/docs/dokumentationssite.html" target="_blank">Dokumentationssite</a>
-            <br>
-
-            <a href="http://shawnamercano.dk/kea/03-content/03-redesign/site/index.html" target="_blank">Færdigt Redesign</a>
-
-        </p>
+                </div>
+            </nav>
+        </div>
+    </header>
 
 
+    <!------ menu -------->
+    <div class="desktop">
+        <header>
+            <nav class="visible">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
+
+                </ul>
+            </nav>
+        </header>
     </div>
+
+
+
+
+    <!--------- Section redesign -------------->
+
+    <section id="redesign">
+
+        <h1>
+            Redesign
+        </h1>
+
+        <div class="section">
+
+            <div class="sectionwrapper">
+
+                <div class="column">
+                    <h3>Tema 3 - Grundlæggende Video
+                    </h3>
+                    <p>
+                        I dette projekt blev gruppen stillet opgaven at redesigne en eksisterende virksomheds hjemmeside - med fokus på at tydeliggøre virksomhedens koncept og interesser, samt at overskueliggøre hjemmesiden ved at forbedre brugervenligheden. Dertil skulle vi også producere en kort video, der præsenterede virksomheden.
+
+                        <br> Min gruppe fik lov at lave video og redesign for en lille privat dagpleje, Børnehuset Kong Gulerod. <br> Efter at have haft undervisning i interviewteknik, video optagelse, klipning og redigering af film, fik vi produceret en video som passede til deres profil. <br> Resultatet af de to ugers arbejde, var et færdigt site der nu bliver brugt af Børnehuset Kong Gulerod.
+
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="column">
+
+                <h4>Splash billede på hjemmesiden </h4>
+                <img src="images/konggulerod.png" alt="myKEA app logo">
+
+
+                <p>
+                    Herunder er links til vores proces, det færdige resultat og Børnehuset Kong Gulerods hjemmeside
+                </p>
+
+
+                <p>
+                    <a href="http://shawnamercano.dk/kea/03-content/03-redesign/docs/dokumentationssite.html" target="_blank">Dokumentationssite</a>
+                    <br>
+
+                    <a href="http://shawnamercano.dk/kea/03-content/03-redesign/site/index.html" target="_blank">Færdigt Redesign</a>
+                    <br>
+
+                    <a href="http://boernehusetkonggulerod.dk/" target="_blank">boernehusetkonggulerod.dk</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
 
 
 
@@ -65,16 +127,14 @@
         1. semester eksamenes Portfolio · Juni 2018<br> af Shawna Schmidt Mercano ·
 
 
-        <a href="https://www.facebook.com/shawna.mercano" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-
-        <a href="https://www.instagram.com/shawnamercano/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-
-
     </footer>
 
 
 
-    <!-- footer slut -->
+
+    <!----- JavaScript ----->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript.js"></script>
 
 </body>
 

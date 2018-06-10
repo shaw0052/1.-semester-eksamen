@@ -2,9 +2,10 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1. semester Portfolio</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <!------ Fonts -------->
@@ -21,30 +22,100 @@
 
 <body>
 
-    <!------ menu -------->
+    <!------ Burger menu -------->
 
-    <nav>
-        <ul>
-            <div class="menu">
-                <a href="index.html">Forside</a>
-                <a href="Portfolio.html">Portfolio</a>
-                <a href="Ommig.html">Om mig</a>
+    <header>
+
+        <div class="burgermenu">
+            <div class="menubutton">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
             </div>
-        </ul>
-    </nav>
 
-    <!------ Sidens indhold -------->
-    <div class="Forside">
+
+            <nav class="hidden">
+                <div class="burger">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!------ menu -------->
+    <div class="desktop">
+        <header>
+            <nav class="visible">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+
+
+    <!--------- Section redesign -------------->
+
+    <section id="animation">
 
         <h1>
             Animation
         </h1>
 
-        <p>
-            <a href="http://www.shawnamercano.dk/kea/02-animation/projekt/index.html" target="_blank">Animation</a>
-        </p>
+        <div class="section">
 
-    </div>
+            <div class="sectionwrapper">
+
+                <div class="column">
+                    <h3>Tema 2 - Grundlæggende animation
+                    </h3>
+                    <p>
+                        I første projekt i tema 2, var målet at lære og forstå CSS-animation og javascript. Vi fik til opgave at lave et lille animationsspil fra bunden. <br> Vi blev introduceret til scenografi, karakterdesign, figuranimation og interaktiv storytelling.
+                        <br> Til start fik vi undervisning i interaktiv historiefortælling, scenografi og karakterdesign. Vi skulle sammensætte en interaktiv historie, designe et miljø samt figurer, og de grafiske elementer der skulle indgå i historien.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="column">
+
+                <h4>karakter design</h4>
+                <img src="images/karakter%20skitse.png" alt="skitse på gammel mand">
+
+                <p>
+                    Efterfølgende blev vi introduceret til animationsprincipper og figuranimation. <br> Karakterdesign og figuranimation bød på meget arbejde i Adobe illustrator. <br> I sidste del af projektet arbejdede vi mest med HTML, CSS og JavaScript, hvor vi lærte at programmere vores animationer til at starte, stoppe og bevæge sig rundt i scenen. Ydermere lærte vi at tilføje lyd til historien samt tællere og timere.
+                </p>
+
+                <p>
+                    Her er resultatet:
+                </p>
+
+
+                <p>
+                    <a href="http://shawnamercano.dk/kea/dokumenter/02.01.02_Karaktedesign%20.pdf" target="_blank">Karakter design</a>
+                    <br>
+
+                    <a href="http://shawnamercano.dk/kea/dokumenter/Animations-opgave.pdf" target="_blank">pdf med Animation og diagrammer</a>
+
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
 
 
 
@@ -53,16 +124,14 @@
         1. semester eksamenes Portfolio · Juni 2018<br> af Shawna Schmidt Mercano ·
 
 
-        <a href="https://www.facebook.com/shawna.mercano" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-
-        <a href="https://www.instagram.com/shawnamercano/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-
-
     </footer>
 
 
 
-    <!-- footer slut -->
+
+    <!----- JavaScript ----->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript.js"></script>
 
 </body>
 

@@ -2,9 +2,10 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1. semester Portfolio</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <!------ Fonts -------->
@@ -21,36 +22,94 @@
 
 <body>
 
-    <!------ menu -------->
+    <!------ Burger menu -------->
 
-    <nav>
-        <ul>
+    <header>
 
-            <div class="menu">
-                <a href="index.html">Forside</a>
-                <a href="Portfolio.html">Portfolio</a>
-                <a href="Ommig.html">Om mig</a>
+        <div class="burgermenu">
+            <div class="menubutton">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
             </div>
-        </ul>
-    </nav>
 
-    <!------ Sidens indhold -------->
-    <div class="Forside">
+
+            <nav class="hidden">
+                <div class="burger">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!------ menu -------->
+    <div class="desktop">
+        <header>
+            <nav class="visible">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+
+
+    <!--------- Section redesign -------------->
+
+    <section id="joeapp">
 
         <h1>
-            Joe Loyalty app
+            Joe &amp; The Juice app
         </h1>
 
-        <p>
-            <a href="http://shawnamercano.dk/kea/04-ux/04_03_02_gruppe-3_dokumentationssite/index.html" target="_blank">Dokumentationssite</a>
-            <br>
+        <div class="section">
 
-            <a href="https://docs.google.com/presentation/d/1k0DyImYpdFEzbI2yvcfsyGQIc372ViE74_we_NN5hyU/edit#slide=id.p" target="_blank">Link til præsentation</a>
+            <div class="sectionwrapper">
 
-        </p>
+                <div class="column">
+                    <h3>Kundecase - Joe &amp; The Juice
+                    </h3>
+                    <p>
+                        Det sidste projekt på 1. semester var en case for Joe &amp; The Juice. <br> Problemstillingen lå i hvordan Joe &amp; The Juice kunne styrke Joe Loyalty-appen. I min gruppe formulerede vi 3 mere dybdegående problemstillinger, på baggrund af bruger undersøgelser og observationer.<br> Resultatet blev en simpel og brugervenlig app og et reklameskilt samt en pamflet.
+
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="column">
+
+                <h4>Reklameskilt og pamflet, designet til juice barene:</h4>
+                <img src="images/joereklame.png" alt="joe app design">
 
 
-    </div>
+                <p>Link til Dokumentationssite og præsentation</p>
+                <p>
+                    <a href="http://shawnamercano.dk/kea/04-ux/04_03_02_gruppe-3_dokumentationssite/index.html" target="_blank">Dokumentationssite</a>
+                    <br>
+
+                    <a href="https://docs.google.com/presentation/d/1k0DyImYpdFEzbI2yvcfsyGQIc372ViE74_we_NN5hyU/edit#slide=id.p" target="_blank">Link til præsentation</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
 
 
 
@@ -59,16 +118,14 @@
         1. semester eksamenes Portfolio · Juni 2018<br> af Shawna Schmidt Mercano ·
 
 
-        <a href="https://www.facebook.com/shawna.mercano" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-
-        <a href="https://www.instagram.com/shawnamercano/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-
-
     </footer>
 
 
 
-    <!-- footer slut -->
+
+    <!----- JavaScript ----->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript.js"></script>
 
 </body>
 

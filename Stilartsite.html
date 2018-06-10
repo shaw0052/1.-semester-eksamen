@@ -2,9 +2,10 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1. semester Portfolio</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <!------ Fonts -------->
@@ -21,77 +22,117 @@
 
 <body>
 
-    <!------ menu -------->
+    <!------ Burger menu -------->
 
-    <nav>
-        <ul>
-            <div class="menu">
-                <a href="index.html">Forside</a>
-                <a href="Portfolio.html">Portfolio</a>
-                <a href="Ommig.html">Om mig</a>
+    <header>
+
+        <div class="burgermenu">
+            <div class="menubutton">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
             </div>
-        </ul>
-    </nav>
 
-    <!------ Sidens indhold -------->
-    <div class="Forside">
 
+            <nav class="hidden">
+                <div class="burger">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!------ menu -------->
+    <div class="desktop">
+        <header>
+            <nav class="visible">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+
+
+    <!--------- Section stilartsite -------------->
+
+
+    <section id="stilartsite">
 
         <h1>
             Stilartsite
         </h1>
-        <div id="stilart">
-           <h3>Tema 1 - Grundlæggende HTML
-</h3>
-            <p>
-                Dette var vores studiestartsprøve og første store opgave på uddannelsen. <br> Selvom selve opgaven var individuel, blev vi delt op i grupper og tildelt en stilart, som vi skulle researche og lave Stilart site ud fra. Min gruppe fik stiarten 'Bauhaus'. Efter grundig research på stiarten, sammensatte vi et moodboard til inspiration. Derefter gik vi i gang med layout af vores Stilart site. Vi arbejdede ud fra mobile first, hvortil vi havde fået en skabelon der skulle udfyldes. Derefter udførte vi selv desktop versionen.
-            </p>
 
-            <br>
-            <h5>Moodboard</h5>
-            <img src="images/bauhaus_moodboard.png" alt="bauhaus moodboard">
-            <br>
-            <p>
-                Da layoutet var på plads, blev vi introduceret til HTML og CSS - og efter et par øvelser var vi klar til at bruge det i vores stilart opgave. Da vi havde fået stablet et helt simpelt site på benene fik vi indblik i typografi og farveteori. Vi skulle blandt andet, udvælge minimum to fonte, der skulle indgå i det endelige site.
-            </p>
+        <div class="section">
 
+            <div class="sectionwrapper">
 
-            <p>
-                Efter undervisning i både typografi og farveteori skulle vi udarbejde et splashbillede, som skulle passe til forskellige formater. Vi lavede også et ikon som skulle bruges som fav-icon.
-            </p>
-            <h5>Færdigt splash billede og ikon:</h5>
-            <img src="images/bauhaus_splash_ikon.png" alt="bauhaus splash og ikon billede">
-            <br>
+                <div class="column">
+                    <h3>Tema 1 - Grundlæggende HTML
+                    </h3>
+                    <p>
+                        Dette var vores studiestartsprøve og første store opgave på uddannelsen. <br> Selvom selve opgaven var individuel, blev vi delt op i grupper og tildelt en stilart, som vi skulle researche og lave Stilart site ud fra. Min gruppe fik stiarten 'Bauhaus'. Efter grundig research på stiarten, sammensatte vi et moodboard til inspiration. Derefter gik vi i gang med layout af vores Stilart site. Vi arbejdede ud fra mobile first, hvortil vi havde fået en skabelon der skulle udfyldes. Derefter udførte vi selv desktop versionen.
+                    </p>
 
-            <p>
-                Her kan du se det færdige resultat af mit Stilartsite i Bauhaus stil:
-            </p>
+                </div>
+            </div>
 
-            <p>
-                <a href="http://shawnamercano.dk/kea/01-web/04-responsive/01_04_04_responsive_v3/index.html" target="_blank">Stilartsite</a>
-            </p>
+            <div class="column">
+
+                <h4>Moodboard</h4>
+                <img src="images/bauhaus_moodboard.png" alt="bauhaus moodboard">
 
 
+                <p>
+                    Da layoutet var på plads, blev vi introduceret til HTML og CSS - og efter et par øvelser var vi klar til at bruge det i vores stilart opgave. Da vi havde fået stablet et helt simpelt site på benene fik vi indblik i typografi og farveteori. Vi skulle blandt andet, udvælge minimum to fonte, der skulle indgå i det endelige site.
+                </p>
+
+
+                <p>
+                    Efter undervisning i både typografi og farveteori skulle vi udarbejde et splashbillede, som skulle passe til forskellige formater. Vi lavede også et ikon som skulle bruges som fav-icon.
+                </p>
+                <h4>Færdigt splash billede og ikon:</h4>
+                <img src="images/bauhaus_splash_ikon.png" alt="bauhaus splash og ikon billede">
+
+                <p>
+                    Her kan du se det færdige resultat af mit Stilartsite i Bauhaus stil:
+                </p>
+
+                <p>
+                    <a href="http://shawnamercano.dk/kea/01-web/04-responsive/01_04_04_responsive_v3/index.html" target="_blank">Stilartsite</a>
+                </p>
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
+
+
+
 
     <!-- footer -->
     <footer>
         1. semester eksamenes Portfolio · Juni 2018<br> af Shawna Schmidt Mercano ·
 
 
-        <a href="https://www.facebook.com/shawna.mercano" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-
-        <a href="https://www.instagram.com/shawnamercano/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-
-
     </footer>
 
 
 
-    <!-- footer slut -->
+
+    <!----- JavaScript ----->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript.js"></script>
 
 </body>
 

@@ -2,9 +2,10 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1. semester Portfolio</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <!------ Fonts -------->
@@ -21,51 +22,94 @@
 
 <body>
 
-    <!------ menu -------->
-    <nav>
-        <ul>
+    <!------ Burger menu -------->
 
-            <div class="menu">
-                <a href="index.html">Forside</a>
-                <a href="Portfolio.html">Portfolio</a>
-                <a href="Ommig.html">Om mig</a>
+    <header>
+
+        <div class="burgermenu">
+            <div class="menubutton">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
             </div>
-        </ul>
-    </nav>
-
-    <!------ Sidens indhold -------->
-
-    <h1>Om mig / CV</h1>
-
-    <div section id="om">
 
 
+            <nav class="hidden">
+                <div class="burger">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
 
-        <img src="images/selvportr%C3%A6t.jpg" alt="selvportræt">
-
-
-        <p>Mit navn er Shawna, jeg er 25 år gammel og mor til to. Jeg er født i New York, men er vokset op i Københavns NordVestkvarter. Nu bor jeg i Brønshøj, med min kæreste og to børn. <br> Til hverdag studerer jeg Multimediedesign på KEA - Københavns Erhvervsakademi.
-        </p>
-
-
-        <h2>Kontakt info</h2>
-        <hr>
-        <br>
-
-
-        <a href="tel:23811040">Tlf: 23811040</a>
-        <br>
-        <a href="mailto:shawna.schmidt.mercano@gmail.com">shawna.schmidt.mercano@gmail.com</a>
-        <br>
+                </div>
+            </nav>
+        </div>
+    </header>
 
 
+    <!------ menu -------->
+    <div class="desktop">
+        <header>
+            <nav class="visible">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
 
-        <a href="https://www.facebook.com/shawna.mercano" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-
-        <a href="https://www.instagram.com/shawnamercano/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-
-
+                </ul>
+            </nav>
+        </header>
     </div>
+
+
+
+
+    <!--------- Section Om mig -------------->
+
+    <section id="om">
+
+        <h1>
+            OM MIG
+        </h1>
+
+        <div class="section">
+
+            <div class="sectionwrapper">
+
+                <div class="column">
+
+                    <img src="images/selvportr%C3%A6t.jpg" alt="myKEA app logo">
+
+                </div>
+            </div>
+
+            <div class="column">
+
+                <p>Mit navn er Shawna, jeg er 25 år gammel og mor til to. Jeg er født i New York, men er vokset op i Københavns NordVestkvarter. Nu bor jeg i Brønshøj, med min kæreste og to børn. <br> Til hverdag studerer jeg Multimedie<wbr>design på KEA - Københavns Erhvervsakademi.
+                </p>
+
+                <h2>Kontakt info</h2>
+                <p>
+                    <a href="tel:23811040">Tlf: 23811040</a>
+                </p>
+                <p>
+                    <a href="mailto:shawna.schmidt.mercano@gmail.com">shawna.schmidt.mercano<wbr>@gmail.com</a>
+                </p>
+
+                <div class="facebook">
+                    <p>
+                        <a href="https://www.facebook.com/shawna.mercano" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+
+                        <a href="https://www.instagram.com/shawnamercano/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="http://shawnamercano.dk/kea/dokumenter/CV.pdf" target="_blank">CV</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
 
     <!-- footer -->
@@ -73,16 +117,14 @@
         1. semester eksamenes Portfolio · Juni 2018<br> af Shawna Schmidt Mercano ·
 
 
-        <a href="https://www.facebook.com/shawna.mercano" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-
-        <a href="https://www.instagram.com/shawnamercano/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-
-
     </footer>
 
 
 
-    <!-- footer slut -->
+
+    <!----- JavaScript ----->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript.js"></script>
 
 </body>
 

@@ -2,9 +2,10 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1. semester Portfolio</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <!------ Fonts -------->
@@ -21,34 +22,99 @@
 
 <body>
 
-    <!------ menu -------->
+    <!------ Burger menu -------->
 
-    <nav>
-        <ul>
-            <div class="menu">
-                <a href="index.html">Forside</a>
-                <a href="Portfolio.html">Portfolio</a>
-                <a href="Ommig.html">Om mig</a>
+    <header>
+
+        <div class="burgermenu">
+            <div class="menubutton">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
             </div>
-        </ul>
-    </nav>
 
-    <!------ Sidens indhold -------->
-    <div class="Forside">
+
+            <nav class="hidden">
+                <div class="burger">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!------ menu -------->
+    <div class="desktop">
+        <header>
+            <nav class="visible">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Ommig.html">Om mig</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+
+
+    <!--------- Section redesign -------------->
+
+    <section id="sexogsamfund">
 
         <h1>
-            Sex &amp; Samfund animation
+            Sex og Samfund
         </h1>
 
-        <p>
-            <a href="http://shawnamercano.dk/kea/02-animation/02_05_01_Gruppe-4_dokumentationssite/index.html" target="_blank">Dokumentationssite</a>
+        <div class="section">
 
-            <br>
+            <div class="sectionwrapper">
 
-            <a href="http://shawnamercano.dk/kea/02-animation/animation_projekt_final/index.html" target="_blank">Animation</a>
-        </p>
+                <div class="column">
+                    <h3>Tema 2 - Grundlæggende animation
+                    </h3>
+                    <p>
+                        I andet og sidste projekt i tema 2, blev vi delt op i grupper af 4-5 personer. Vi fik til opgave, at animere en lille film eller spil, for Sex &amp; Samfund og Privat Snak, med fokus på billeddeling. <br> Inden projektet rigtig gik i gang, blev vi introduceret til Scrum - et projektstyringsværktøj vi skulle bruge, under de to ugers gruppearbejde. Scrum fungerede rigtig godt og gav gruppen et overblik over de mange delopgaver vi skulle færdiggøre, for at komme i mål.
+                    </p>
 
-    </div>
+                    <p>
+                        Min gruppe valgte at lave et lille interaktivt spil, med to hovedkarakterer der berører emnet billeddeling og konsekvenserne deraf.
+                    </p>
+
+                    <p>
+                        Vi afsluttede forløbet med en fernisering, hvor vi skulle vise vores færdige produkt frem for lærerer og medstuderende på skolen.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+
+                <h4>Stand til fernisering</h4>
+                <img src="images/animation_fernisering.jpg" alt="stand til fernisering">
+
+                <p>Link til Dokumentationssite og animationsspillet</p>
+                <p>
+                    <a href="http://shawnamercano.dk/kea/02-animation/02_05_01_Gruppe-4_dokumentationssite/index.html" target="_blank">Dokumentationssite</a>
+
+                    <br>
+
+                    <a href="http://shawnamercano.dk/kea/02-animation/animation_projekt_final/index.html" target="_blank">Animation</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
 
 
 
@@ -57,16 +123,14 @@
         1. semester eksamenes Portfolio · Juni 2018<br> af Shawna Schmidt Mercano ·
 
 
-        <a href="https://www.facebook.com/shawna.mercano" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-
-        <a href="https://www.instagram.com/shawnamercano/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-
-
     </footer>
 
 
 
-    <!-- footer slut -->
+
+    <!----- JavaScript ----->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript.js"></script>
 
 </body>
 
