@@ -181,11 +181,12 @@ header .visible {
 /*----- skrifttype, str. osv. ------*/
 
 a {
-    font-family: 'Raleway Dots', cursive;
+    font-family: 'Abel', sans-serif;
     font-size: 1.2em;
     line-height: 20px;
     color: grey;
     text-decoration: none;
+
 }
 
 .facebook a {
@@ -216,7 +217,7 @@ h2 {
 
 h3 {
     font-family: 'Raleway Dots', cursive;
-    font-size: 1.1em;
+    font-size: 1.4em;
     line-height: 25px;
 }
 
@@ -230,9 +231,10 @@ h4 {
 
 
 p {
-    font-family: 'Raleway Dots', cursive;
-    font-size: 1em;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.1em;
     line-height: 22px;
+    word-spacing: 0.1vw;
 }
 
 
