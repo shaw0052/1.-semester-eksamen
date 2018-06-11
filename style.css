@@ -21,7 +21,7 @@ header * {
 
 .burger a {
 
-    font-family: 'Raleway Dots', cursive;
+    font-family: 'Julius Sans One', sans-serif;
     background-color: white;
     padding: 0px 30px;
     text-decoration: none;
@@ -92,7 +92,7 @@ nav {
 
     background-color: white;
     text-decoration: none;
-    font-family: 'Raleway Dots', cursive;
+    font-family: 'Poiret One', cursive;
     font-size: 1.2em;
     position: relative;
     overflow: hidden;
@@ -104,7 +104,7 @@ nav {
 }
 
 ul a {
-    font-family: 'Raleway Dots', cursive;
+    font-family: 'Julius Sans One', sans-serif;
     background-color: white;
     padding: 0px 30px;
     text-decoration: none;
@@ -201,7 +201,10 @@ a {
 
 
 h1 {
-    font-family: 'Raleway Dots', cursive;
+
+
+    font-family: 'Julius Sans One', sans-serif;
+
     font-size: 2.5em;
     line-height: 45px;
     color: #ea1717;
@@ -211,12 +214,12 @@ h1 {
 }
 
 h2 {
-    font-family: 'Raleway Dots', cursive;
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 1.4em;
 }
 
 h3 {
-    font-family: 'Raleway Dots', cursive;
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 1.4em;
     line-height: 25px;
 }
@@ -224,9 +227,11 @@ h3 {
 
 
 h4 {
-    font-family: 'Raleway Dots', cursive;
-    font-size: 1em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 0.8em;
     line-height: 25px;
+
+
 }
 
 
@@ -263,7 +268,7 @@ hr {
     padding: 0 15px 30px;
     margin: 0 auto;
     max-width: 700px;
-    max-width: 300px;
+    max-width: 450px;
     position: relative;
 }
 
@@ -280,11 +285,11 @@ hr {
     flex-grow: 1;
     flex-basis: 200px;
     padding: 0 7px 1px;
-
+    text-align: center
 }
 
 #om img {
-    /*    border-radius: 100%;*/
+    border-radius: 100%;
     max-width: 100%;
 
 }
@@ -647,7 +652,8 @@ section {
 footer {
     text-align: center;
     color: white;
-    background-color: rgba(23, 25, 27, 0.89);
-    padding: 15px;
-    font-family: 'Raleway Dots', cursive;
+    background-color: rgba(23, 25, 27, 0.66);
+    padding: 10px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 10px;
 }
